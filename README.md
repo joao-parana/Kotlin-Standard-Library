@@ -1,5 +1,8 @@
 # Kotlin-Standard-Library
 
+> The original github repository is [https://github.com/PacktPublishing/Kotlin-Standard-Library-Cookbook](https://github.com/PacktPublishing/Kotlin-Standard-Library-Cookbook)
+
+
 See details: [https://www.packtpub.com/application-development/kotlin-standard-library-cookbook](https://www.packtpub.com/application-development/kotlin-standard-library-cookbook)
 
 This is the code bundle for the book, Kotlin Standard Library Cookbook.
