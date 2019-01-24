@@ -1,14 +1,14 @@
 package chapter9
 
-import com.nhaarman.mockito_kotlin.*
-import kotlinx.coroutines.experimental.Deferred
-import kotlinx.coroutines.experimental.async
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.runBlocking
-import kotlinx.coroutines.experimental.test.TestCoroutineContext
+import com.nhaarman.mockitokotlin2.*
+import kotlinx.coroutines.Deferred
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.TestCoroutineContext
 import org.junit.Test
 import java.util.concurrent.TimeUnit
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Chapter: Best practices for Android, JUnit and JVM UI frameworks

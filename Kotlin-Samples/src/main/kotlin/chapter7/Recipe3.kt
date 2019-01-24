@@ -1,9 +1,6 @@
 package chapter7
 
-import kotlinx.coroutines.experimental.Job
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.newSingleThreadContext
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.*
 import kotlin.system.measureTimeMillis
 
 /**
@@ -14,10 +11,12 @@ fun main(vararg args: String) {
 
     `print current thread name`()
 
-    var sushiCookingJob: Job
+    var sushiCookingJob = Job()
+
+    val scope = CoroutineScope(Dispatchers.Main + sushiCookingJob)
 
     val time = measureTimeMillis {
-        sushiCookingJob = launch(newSingleThreadContext("SushiThread")) {
+        scope.launch(newSingleThreadContext("SushiThread")) {
             `print current thread name`()
 
             val riceCookingJob = launch {
